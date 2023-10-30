@@ -1,17 +1,17 @@
 let team3data = [
   {
-    "id": "test",
-    "password": "test",
-    "name": "test",
+    "user_id": "test",
+    "user_pw": "test",
+    "user_name": "test",
     "log": []
   }
 ];
 
 let team5data = [
   {
-    "id": "test",
-    "password": "test",
-    "name": "test",
+    "user_id": "test",
+    "user_pw": "test",
+    "user_name": "test",
     "log": []
   }
 ];
