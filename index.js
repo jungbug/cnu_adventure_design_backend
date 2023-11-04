@@ -19,10 +19,11 @@ app.post('/team3/register', (req, res) => {
 app.post("/team3/log", (req, res) => {
   team3data.forEach(element => {
     if (element.user_id === req.body.user_id) {
-      element.log.push(req.body)
+      element.log.push(req.body.log)
+      console.log(req.body.log)
     }
   });
-  console.log(team3data)
+  console.log(team3data[0].log)
 })
 
 app.post("/team3/getlog", (req, res) => {
