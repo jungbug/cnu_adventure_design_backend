@@ -56,6 +56,17 @@ app.get('/team5/login', (req, res) => {
   res.send(team5data)
 })
 
+app.post('/team5/team5storeSave', (req, res) => {
+  console.log(req.body)
+  team5store.push(req.body)
+  res.send("확인이요")
+})
+
+app.get('/team5/team5storeLog', (req, res) => {
+  console.log("team5 login data:", team5data)
+  res.send(team5store)
+})
+
 app.listen(3000)
 
 let team3data = [
@@ -119,6 +130,13 @@ let team5data = [
     "user_id": "test",
     "user_pw": "test",
     "user_name": "test",
-    "log": []
+  }
+];
+
+let team5store = [
+  {
+    "use_trash": "페트병",
+    "product": "페트병 화분",
+    "phoneNumber": "010-1234-5678"
   }
 ];
